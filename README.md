@@ -11,7 +11,7 @@ LIVE: https://andrzejszlachta.github.io/light-dark-mode/
 
 ## Overview
 
-desc
+Toggle Dark & Light mode.
 
 ### Built With
 
@@ -19,7 +19,8 @@ HTML, CSS, JavaScript
 
 ## Features
 
-1. feature
+1. Switch between Dark and Light mode.
+2. Save selected mode to localStorage.
 
 ## Contact
 
@@ -28,4 +29,4 @@ https://andrzejszlachta.github.io/
 
 ## Acknowledgements
 
-ack
+JavaScript Web Projects: 20 Projects to Build Your Portfolio
