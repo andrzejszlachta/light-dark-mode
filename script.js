@@ -19,6 +19,8 @@ function switchMode(mode) {
   image1.src = `./assets/undraw_cooking_p7m1_${mode}.svg`;
   image2.src = `./assets/undraw_flying_drone_u3r2_${mode}.svg`;
   image3.src = `./assets/undraw_traveling_yhxq_${mode}.svg`;
+  // save theme to localStorage
+  localStorage.setItem('theme', mode);
 }
 
 // switch theme dynamically
@@ -32,3 +34,14 @@ function switchTheme(event) {
 
 // event listener
 toggleSwitch.addEventListener('change', switchTheme);
+
+// load saved theme mode from local storage
+function loadTheme() {
+  const theme = localStorage.getItem('theme');
+  if (theme === 'dark') {
+    switchMode(theme);
+    toggleSwitch.checked = true;
+  }
+}
+// on load
+loadTheme()
